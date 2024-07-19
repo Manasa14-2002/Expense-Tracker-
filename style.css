@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#f2e8e6
+
+    ;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-section input[type="number"], .input-section input[type="date"] {
+    padding: 5px;#fff
+    margin-right: 10px;
+}
+
+.input-section button {
+    padding: 5px 10px;
+    background-color:#BF8E9E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-section {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.auth-section button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #BF8E9E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.expenses-list {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:whitesmoke;
+   
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 98%);
+    color: black;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color:#BF8E9E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.popup-content input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.popup-content button {
+    padding: 5px 10px;
+    background-color: #BF8E9E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.chart-container{
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.hidden{
+    display: none;
+}
+#pieChart{
+    margin-top: 20px;
+}
+.btn{
+    background-color:#BF8E9E;
+}
