@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <h1>Expense Tracker App</h1>
+    
+    <div class="auth-section">
+        <button id="login-btn" class="btn" >Login</button>
+        <button id="register-btn" class="btn" >Register</button>
+        <button id="logout-btn" class="btn" style="display:none;">Logout</button>
+    </div>
+    
+    <div class="popup" id="auth-popup">
+        <div class="popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h3 id="auth-popup-title"></h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <button id="auth-submit-btn" class="btn" >Submit</button>
+        </div>
+    </div>
+    
+    <div class="input-section" id="input-section" style="display:none;">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Relaxing">Relaxing</option>
+            <option value="=Education">Education</option>
+            <option value="Salary">Salary</option>
+            <option value="Savings">Savings</option>
+        </select>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+        <button id="add-btn" class="btn" >Add</button>
+    </div>
+    
+    <div class="expenses-list" id="expenses-list" style="display:none;">
+        <h2>Expenses List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expense-table-body">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="chart-container hidden "  style="width: 30%; margin: auto; text-align: center;  ">
+        <h2>Categories-Chart</h2>
+        <canvas id="pieChart"></canvas>
+    </div>
+<!--     
+    <div class="chart-container" id="chart-container" style="display:none;">
+        <h2>Income and Expenses Chart</h2>
+        <canvas id="income-expense-chart"></canvas>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
